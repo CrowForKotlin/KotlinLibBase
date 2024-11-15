@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mordecai.base.ui.component.blurlayout.BlurLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loading_frame"
+    android:layout_width="match_parent"
+    app:blurRadius="5"
+    android:background="@color/base_grey_900_40"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:trackColor="@color/base_blue_100"
+        app:indicatorSize="@dimen/base_dp28"
+        android:indeterminate="true"
+        android:background="@drawable/base_loading_shape"
+        android:layout_marginTop="@dimen/base_dp50"
+        android:layout_gravity="center_horizontal"
+        app:trackCornerRadius="@dimen/base_dp99"
+        app:trackThickness="@dimen/base_dp4" />
+
+</com.mordecai.base.ui.component.blurlayout.BlurLayout>
