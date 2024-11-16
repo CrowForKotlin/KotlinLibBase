@@ -16,11 +16,9 @@ open class BaseApp : Application() {
     override fun onCreate() {
         super.onCreate()
         context = this
-        measureTimeMillis {
-            startKoin {
-                androidContext(this@BaseApp)
-                this.loadModules()
-            }
-        }.log()
+        startKoin {
+            androidContext(this@BaseApp)
+            loadModules()
+        }
     }
 }
